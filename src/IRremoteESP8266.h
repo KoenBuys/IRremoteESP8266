@@ -101,7 +101,7 @@
 //      Kelvinator protocol, you would use:
 //        `-DDECODE_KELVINATOR=false`
 #ifndef _IR_ENABLE_DEFAULT_
-#define _IR_ENABLE_DEFAULT_ true  // Unless set externally, the default is on.
+#define _IR_ENABLE_DEFAULT_ false  // Unless set externally, the default is on.
 #endif  // _IR_ENABLE_DEFAULT_
 
 // Supported IR protocols
@@ -169,10 +169,10 @@
 #endif  // SEND_PANASONIC
 
 #ifndef DECODE_JVC
-#define DECODE_JVC             _IR_ENABLE_DEFAULT_
+#define DECODE_JVC             true
 #endif  // DECODE_JVC
 #ifndef SEND_JVC
-#define SEND_JVC               _IR_ENABLE_DEFAULT_
+#define SEND_JVC               true
 #endif  // SEND_JVC
 
 #ifndef DECODE_SAMSUNG
